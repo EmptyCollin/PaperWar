@@ -1,0 +1,14 @@
+ID,Name,Type,CostPaper,CostGule,MaxHP,MoveSpeed,AttSpeed,AttDmg,AttRange,IsRanger,Size,ViewRange,CanBuild,CanCreate,CanResearch,PrefabPath,IconPath
+0,Base_Level1,0,0,0,1000,0,0,0,0,0,10,0,1,10,,Models/Base/Base_Level1,Icons/Base_Level1
+1,Base_Level2,0,600,0,2500,0,0,0,0,0,10,0,,10,100;101;102;103,Models/Base/Base_Level2,Icons/Base_Level2
+2,Barrack,0,200,0,800,0,0,0,0,0,10,0,,11;12;13,,Models/Barrack/Barrack,Icons/Barrack
+3,Workshop,0,300,20,600,0,0,0,0,0,10,0,,14,,Models/Workshop/Workshop,Icons/Workshop
+10,Farmer,1,50,0,150,6,1,5,5,0,2,0,2;3,,,Models/Farmer/Farmer,Icons/Farmer
+11,Footman,1,120,0,400,10,1.5,25,5,0,2,0,,,,Models/Footman/Footman1,Icons/Footman
+12,Musketeer,1,100,20,300,8,1,40,50,1,2,0,,,,Models/Musketeer/Musketeer,Icons/Musketeer
+13,Cannon,1,300,100,300,6,0.5,100,80,1,4,0,,,,Models/Cannon/Cannon,Icons/Cannon
+14,PaperPlane,1,150,50,250,20,2,20,40,1,4,0,,,,Models/PaperPlane/PaperPlane,Icons/PaperPlane
+100,AddHP,2,500,0,0,0,0,0,0,0,0,0,,,,,Icons/AddHP
+101,IncreaseAttack,2,500,0,0,0,0,0,0,0,0,0,,,,,Icons/IncreaseAttack
+102,IncreaseAttackSpeed,2,500,0,0,0,0,0,0,0,0,0,,,,,Icons/IncreaseAttackSpeed
+103,IncreaseMovingSpeed,2,500,0,0,0,0,0,0,0,0,0,,,,,Icons/IncreaseMovingSpeed

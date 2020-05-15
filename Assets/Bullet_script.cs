@@ -8,15 +8,29 @@ public class Bullet_script : MonoBehaviour
     public GameObject target;
     public double targetSize;
     public float speed;
+    public double dmg;
+
+    // need game controller here to update resource
+    public GameObject gc;
+
     void Start()
     {
-        speed = 10f;
+        speed = 30f;
+        //dmg = 0;
         targetSize = 6;
+
+        gc = GameObject.Find("GameController");
     }
 
     // Update is called once per frame
     void Update()
     {
+       
+        if (target == null)
+        {
+            Destroy(gameObject);
+            return;
+        }
         float step = speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, step);
         Colliorcheck();
@@ -35,8 +49,10 @@ public class Bullet_script : MonoBehaviour
     public void kill()
     {
         // target decrase health here;
+        
+        
 
-        //=================================
+        target.GetComponent<Unit_info>().hp -= dmg;
         Destroy(gameObject);
 
     }

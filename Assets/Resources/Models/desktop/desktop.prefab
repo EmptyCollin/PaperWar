@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1883286071834833664}
   - component: {fileID: 1883286071834833665}
   - component: {fileID: 1883286071834833666}
+  - component: {fileID: 4943172682747362240}
   - component: {fileID: 1883286071834833669}
   m_Layer: 0
   m_Name: desktop
@@ -67,7 +68,6 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -96,6 +96,41 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &4943172682747362240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883286071834833790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1df53bf19a7b5e4395517e42fe2395b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100000
+  maxHp: 0
+  moveSpeed: 0
+  attSpeed: 0
+  attDmg: 0
+  attRange: 0
+  currIntercept: 0
+  isSelect: 0
+  isRanger: 0
+  belongTo: -1
+  size: 0
+  viewRange: 0
+  type: 3
+  state: 0
+  ani: {fileID: 0}
+  ID: 0
+  canBuild: 
+  canCreate: 
+  canResearch: 
+  currentProcessing: 0
+  currentItem: 0
+  itemText: {fileID: 0}
+  goingToBe: -999
 --- !u!64 &1883286071834833669
 MeshCollider:
   m_ObjectHideFlags: 0

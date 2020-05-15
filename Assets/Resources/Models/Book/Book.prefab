@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6759018089429599756}
   - component: {fileID: 466037144381434768}
   - component: {fileID: 4015169292119804129}
+  - component: {fileID: 1889438694165655559}
   m_Layer: 0
   m_Name: Book
   m_TagString: Untagged
@@ -41,7 +42,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6759018089427671244}
-  m_Mesh: {fileID: 4300000, guid: 7107b167ca4f36c49bbecea3cd8d139e, type: 3}
+  m_Mesh: {fileID: 4300002, guid: bbb2cba6e879f024280aee17730b79d6, type: 3}
 --- !u!23 &6759018089429599756
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -108,4 +109,39 @@ MeshCollider:
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 7107b167ca4f36c49bbecea3cd8d139e, type: 3}
+  m_Mesh: {fileID: 4300002, guid: bbb2cba6e879f024280aee17730b79d6, type: 3}
+--- !u!114 &1889438694165655559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6759018089427671244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1df53bf19a7b5e4395517e42fe2395b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 100000
+  maxHp: 0
+  moveSpeed: 0
+  attSpeed: 0
+  attDmg: 0
+  attRange: 0
+  currIntercept: 0
+  isSelect: 0
+  isRanger: 0
+  belongTo: -1
+  size: 0
+  viewRange: 0
+  type: 3
+  state: 0
+  ani: {fileID: 0}
+  ID: 0
+  canBuild: 
+  canCreate: 
+  canResearch: 
+  currentProcessing: 0
+  currentItem: 0
+  itemText: {fileID: 0}
+  goingToBe: -999

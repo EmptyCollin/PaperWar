@@ -11,8 +11,10 @@ public class CameraController : MonoBehaviour
 
     public float scrollSpeed = 20f;
 
-    public float minY = 30f;
+    public float minY = 20f;
     public float maxY = 50f;
+
+
 
     // Update is called once per frame
     void Update()
@@ -40,10 +42,10 @@ public class CameraController : MonoBehaviour
 
         float scroll = Input.GetAxis("Mouse ScrollWheel");
         // 50f because is too slow
-        pos.y -= scroll * scrollSpeed * 50f * Time.deltaTime; 
+        GetComponent<Camera>().orthographicSize -= scroll * scrollSpeed * 50f * Time.deltaTime; 
 
         pos.x = Mathf.Clamp(pos.x, - panLimit.x, panLimit.x);
-        pos.y = Mathf.Clamp(pos.y, minY, maxY);
+        GetComponent<Camera>().orthographicSize = Mathf.Clamp(GetComponent<Camera>().orthographicSize, minY, maxY);
         pos.z = Mathf.Clamp(pos.z, - panLimit.y-40, panLimit.y-40);
 
         transform.position = pos;
